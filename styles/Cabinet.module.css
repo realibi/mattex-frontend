@@ -1,0 +1,170 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper{
+    margin-top: 125px;
+    width: 100%;
+    display: flex;
+    padding: 0 5%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.container{
+    padding: 0 5%;
+}
+.inputBody{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subInputBody{
+    display: flex;
+    align-items: center;
+}
+.leftSide{
+    width: 35%;
+}
+.rightSide{
+    width: 65%;
+}
+.personalInfo{
+    width: 100%;
+}
+.editingImg{
+    height: 24px;
+    cursor: pointer;
+}
+
+.fioInput{
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: "Montserrat-Medium";
+    font-size: 24px;
+    margin-right: 5px;
+}
+.fioInput:disabled{
+    color: black;
+    border: none;
+    font-family: "Rubik Medium";
+    font-size: 24px;
+}
+.fioInput:focus{
+    outline: none;
+}
+.subInput:focus{
+    outline: none;
+}
+
+.subInput{
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: "Montserrat-Medium";
+    font-size: 16px;
+    margin-right: 5px;
+}
+.subInput:disabled{
+    color: black;
+    border: none;
+    font-family: "Montserrat-Medium";
+    font-size: 16px;
+}
+.subtitle{
+    color: black;
+    font-family: "Montserrat-Medium";
+    font-size: 16px;
+    color: #6c6c6c;
+    margin-right: 5px;
+}
+
+.buttonBody{
+    width: 100%;
+    margin-top: 10px;
+}
+.button{
+    font-family: "Rubik Medium";
+    color: white;
+    background: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.title{
+    color: black;
+    font-family: "Montserrat-Bold";
+    font-size: 32px;
+}
+.personalInfo{
+    margin-top: 10px;
+}
+.purchaseBody{
+    width: 49%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.circle{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.purchaseInfo{
+    margin-left: 5px;
+}
+.purchaseTitle{
+    color: black;
+    font-family: "Montserrat-SemiBold";
+    font-size: 18px;
+}
+.circleImg{
+    height: 48px;
+}
+.rightWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

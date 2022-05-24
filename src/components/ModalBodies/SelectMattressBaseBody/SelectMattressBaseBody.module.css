@@ -1,0 +1,26 @@
+.body{
+    width: 100%;
+}
+.title{
+    font-size: 14px;
+    font-family: Montserrat-Bold;
+}
+.list{
+    width: 100%;
+}
+.listItem{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.itemTitle{
+    font-family: Montserrat-Medium;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.itemTitle:hover{
+    color: #F2AD31;
+}
+.itemDesc{
+    font-size: 12px;
+    font-family: Montserrat-Regular;
+}

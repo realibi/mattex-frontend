@@ -1,0 +1,160 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    padding: 15px 5%;
+    box-sizing: border-box;
+    background: white;
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.headerTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+.row{
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.menuItem{
+    margin: 0 15px;
+    font-family: 'Montserrat-Regular';
+    color: black;
+    text-decoration: none;
+    padding: 1.5px 0;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.menuItem:hover{
+    border-bottom: 1px solid black;
+}
+.buttonItem{
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 0 5px;
+    background: #343434;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(41,41,41,.25);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 9px 1px rgba(41,41,41,.25);
+    transition: 0.3s;
+}
+.buttonImage{
+    height: 16px;
+    transition: 0.3s;
+}
+.buttonItem:hover .buttonImage{
+    transform: scale(0.9);
+}
+
+.menuButton{
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+.mobileMenu{
+    display: none;
+    height: 0;
+    transition: 0.5s ease-in-out;
+    overflow: hidden; 
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+.mobileMenu.heightAuto{
+    height: 69px;
+}
+
+/* ipad pro  */
+@media only screen and (min-width: 1024px) and (max-height: 1366px){
+    
+}
+
+/* ipad */
+@media screen and (device-aspect-ratio: 3/4) {
+    
+}
+
+/* iphone x */
+@media screen and (max-width: 761px) {
+    .menu{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+        height: 24px;
+        cursor: pointer;
+    }
+    .mobileMenu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menuItem{
+        margin: 0;
+    }
+}
+
+/* iphone 5 */
+@media screen and (device-aspect-ratio: 40/71){
+    
+}

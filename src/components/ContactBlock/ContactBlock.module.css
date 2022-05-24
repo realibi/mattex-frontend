@@ -1,0 +1,99 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.container{
+    background-image: url("../../../public/ContactBlock.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 65px 0;
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-family: 'Montserrat-Bold';
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.text{
+    width: 60%;
+    word-wrap: break-word;
+    font-family: 'Montserrat-Regular';
+    color: white;
+}
+.footer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+.button{
+    white-space: nowrap;
+    color: white;
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: "Montserrat-Regular";
+    border: 1px solid white;
+    margin: 0 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button:hover{
+    color: black;
+    background: white;
+}
+.button:active{
+    outline: none;
+}
+
+@media screen and (max-width: 761px){
+    .footer{
+        flex-direction: column;
+    }
+    .title{
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+    .text{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

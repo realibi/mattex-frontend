@@ -1,0 +1,82 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.footer{
+    width: 100%;
+    padding: 20px 5%;
+    box-sizing: border-box;
+    background: #2E2E2E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoBlock{
+
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+.text{
+    font-family: "Montserrat-Regular";
+    color: white;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navList{
+    margin: 0 5px;
+}
+.navItem{
+    cursor: pointer;
+    font-family: "Montserrat-Regular";
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 761px){
+    .footer{
+        flex-direction: column;
+    }
+    .nav{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .logoBlock{
+        margin-bottom: 20px;
+    }
+}
+
+/* iphone 5/se   */
+@media screen and (device-aspect-ratio: 40/71){
+    
+}

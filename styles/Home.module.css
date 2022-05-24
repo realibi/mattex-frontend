@@ -1,0 +1,108 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.container{
+    width: 100%;
+    padding: 10px 5%;
+    box-sizing: border-box;
+}
+.titleBlock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.title{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0 20px;
+    font-family: 'Montserrat-SemiBold';
+    white-space: nowrap;
+}
+.row{
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+.catalog{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.linkButton{
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+    font-family: 'Montserrat-Regular';
+}
+.linkButton:hover{
+    border-bottom: 1px solid black;
+}
+
+.alertEnter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.alertEterActive {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.alertExit {
+    opacity: 1;
+}
+.alertExitActive {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+/* ipad */
+@media screen and (device-aspect-ratio: 3/4) {
+    .catalog{
+        width: 100%;
+    }
+}
+
+/* iphone x */
+@media screen and (max-width: 761px) {
+    .catalog{
+        width: 100%;
+    }
+}
+
+/* iphone 5 */
+@media screen and (device-aspect-ratio: 40/71){
+    
+}

@@ -1,0 +1,26 @@
+.table{
+    border: 1px solid darkgrey;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.table_row{
+    max-height: 20px;
+    height: 20px;
+}
+
+.table_cell{
+    min-width: 100px;
+    text-align: center;
+    border: 1px solid darkgrey;
+}
+
+.description{
+    min-width: 400px;
+    text-align: justify;
+}
+
+.thickness{
+    min-width: 30px;
+    text-align: justify;
+}

@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.container{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body{
+    width: 55%;
+    padding: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(41,41,41,.25);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 9px 1px rgba(41,41,41,.25);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 0 10px 20px 10px;
+    text-align: center;
+}
+.itemImage{
+    height: 48px;
+    margin-bottom: 10px;
+}
+.itemTitle{
+    font-family: "Montserrat-SemiBold";
+    font-size: 16px;
+}
+
+/* ipad pro  */
+@media only screen and (min-width: 1024px) and (max-height: 1366px){
+    
+}
+
+/* ipad */
+@media screen and (device-aspect-ratio: 3/4) {
+    
+}
+
+/* iphone x */
+@media screen and (max-width: 761px) {
+    .body{
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .item{
+        width: 40%;
+    }
+    .itemImage{
+        height: 32px;
+    }
+    .itemTitle{
+        font-size: 14px;
+    }
+}
+
+/* iphone 5 */
+@media screen and (device-aspect-ratio: 40/71){
+    
+}

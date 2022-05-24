@@ -1,0 +1,94 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../../../../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../../../../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../../../../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../../../../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../../../../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../../../../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../../../../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.container{
+    padding: 10px;
+}
+
+.button{
+    padding: 15px 20px;
+    text-align: center;
+    background: #E0E1AC;
+    font-family: "Montserrat-Bold";
+    border-radius: 10px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 49%;
+}
+.body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.line{
+    margin: 0 5px;
+    width: 100%;
+    height: 1px;
+}
+.title{
+    color: #828282;
+    font-family: "Montserrat-Regular";
+}
+.subtitle{
+    font-family: "Montserrat-Regular";
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.input{
+    border: none;
+    padding: 0;
+    width: 49%;
+    font-family: Montserrat-Regular;
+    line-height: 16px;
+    font-size: 16px;
+    border-bottom: 1px solid grey;
+}
+.input:focus{
+    outline: none;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

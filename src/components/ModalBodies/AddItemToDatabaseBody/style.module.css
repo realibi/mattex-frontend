@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px grey;
+    background-color: #be821e;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button:hover{
+    box-shadow: 0 0 10px #be821e;
+
+}

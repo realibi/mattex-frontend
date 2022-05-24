@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../../../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../../../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.container{
+    background-image: url("../../../public/AboutCompany.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-family: 'Montserrat-Bold';
+    color: white;
+    font-size: 36px;
+}
+.text{
+    width: 50%;
+    text-align: justify;
+    font-family: 'Montserrat-Regular';
+    color: white;
+}
+@media screen and (device-aspect-ratio: 3/4) {
+    .text{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 761px) {
+    .text{
+        width: 90%;
+        font-size: 14px;
+    }
+}
