@@ -1,0 +1,47 @@
+@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url("../../public/fonts/Monseratt/Montserrat-Regular.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url("../../public/fonts/Monseratt/Montserrat-Bold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-BoldItalic';
+    src: url("../../public/fonts/Monseratt/Montserrat-BoldItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url("../../public/fonts/Monseratt/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-MediumItalic';
+    src: url("../../public/fonts/Monseratt/Montserrat-MediumItalic.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBold';
+    src: url("../../public/fonts/Monseratt/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url("../../public/fonts/Monseratt/Montserrat-SemiBoldItalic.ttf");
+}
+
+.body{
+    font-family: Montserrat-Regular;
+}
+
+.container{
+    margin-top: 150px;
+    padding: 0 5%;
+}
+
+.button{
+    padding: 10px 15px;
+    background-color: #d78801;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px grey;
+    cursor: pointer;
+    color: #fff;
+}
