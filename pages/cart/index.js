@@ -27,6 +27,12 @@ export default function cart(){
         setTotalSum(totalSum);
     }
 
+    const clearCart = () => {
+        setCartArray([]);
+        localStorage.setItem(helpers.localStorageKeys.cart, JSON.stringify([]));
+        getCartInfo();
+    }
+
     const createOrder = () => {
         setMessageForUser('Ваш заказ оформлен!');
         setOrderCreated(true);
@@ -174,6 +180,7 @@ export default function cart(){
                                         {messageForUser}
                                     </p>
                                     <button
+                                        onClick={() => clearCart()}
                                         style={{
                                             backgroundColor: 'red',
                                             border: '1px solid transparent',
