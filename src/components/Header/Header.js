@@ -14,12 +14,16 @@ function Header (props) {
     const [cartArray, setCartArray] = useState([]);
     const [accountLink, setAccountLink] = useState({text: 'Войти', href: '/login'});
     const [cartBody, setCartBody] = useState(null);
+    const [loggedIn, setLoggedIn] = useState(false);
 
     useEffect(() => {
         let currentUser = localStorage.getItem(helpers.localStorageKeys.user);
         if(currentUser !== null){
+            setLoggedIn(true);
             let userFullName = JSON.parse(localStorage.getItem(helpers.localStorageKeys.user)).fullName;
-            setAccountLink({text: `Личный кабинет ${userFullName}`, href: '/cabinet'});
+            setAccountLink({
+                text: `Личный кабинет ${userFullName}`,
+                href: '/cabinet'});
         }
     }, [])
 
@@ -50,13 +54,14 @@ function Header (props) {
                     {/*</div>*/}
 
                     <Link href={accountLink.href}>
-                        <p
+                        <span
                             className={styles.menuItem}
                             style={{
                                 fontWeight: 700
                             }}
-                        >{accountLink.text}</p>
+                        >{accountLink.text}</span>
                     </Link>
+                    {loggedIn && (<a style={{marginRight: 15}} href="/login">Выйти</a>)}
 
                     <Link href={'/cart'}>
                         <div className={styles.buttonItem}>
