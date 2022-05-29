@@ -43,6 +43,14 @@ function Header (props) {
                     <a href={'/'} className={styles.menuItem}>Главная</a>
                     <a href={'/catalog'} className={styles.menuItem}>Каталог</a>
                     <a onClick={() => props.openConstructorModal()} className={styles.menuItem}>Конструктор</a>
+                    <a href={'https://www.instagram.com/mattex.kz/'}>
+                        <div className={styles.buttonItem}>
+                            <img
+                                src="/inst.png"
+                                className={styles.buttonImage}
+                            />
+                        </div>
+                    </a>
                 </div>
                 <div className={styles.buttons}>
                     {/*<div className={styles.buttonItem}>*/}
@@ -61,7 +69,6 @@ function Header (props) {
                             }}
                         >{accountLink.text}</span>
                     </Link>
-                    {loggedIn && (<a style={{marginRight: 15}} href="/login">Выйти</a>)}
 
                     <Link href={'/cart'}>
                         <div className={styles.buttonItem}>
@@ -71,6 +78,17 @@ function Header (props) {
                             />
                         </div>
                     </Link>
+
+                    {loggedIn && (
+                        <Link href={'/login'}>
+                            <div className={styles.buttonItem}>
+                                <img
+                                    src="/door.png"
+                                    className={styles.buttonImage}
+                                />
+                            </div>
+                        </Link>
+                    )}
                 </div>
             </div>
             <div className={classnames(styles.mobileMenu, showMobileMenu===false ? null : styles.heightAuto)}>

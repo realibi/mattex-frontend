@@ -78,7 +78,12 @@ export default function cart(){
             </Head>
             <Header/>
 
-            <div style={{marginTop: 150, padding: '0 5% 5% 5%'}}>
+            <div style={{
+                marginTop: 150,
+                padding: '0 5% 0 5%',
+                height: '85vh',
+                marginBottom: -150
+            }}>
                 <h1 style={{
                     fontFamily: 'Montserrat-Bold',
                     marginBottom: 40

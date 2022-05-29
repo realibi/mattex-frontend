@@ -53,6 +53,13 @@ export default function Login(){
             });
     }
 
+    const handleKeypress = e => {
+        //it triggers by pressing the enter key
+        if (e.keyCode === 13) {
+            alert("ok");
+        }
+    };
+
     const registrationButtonPressed = () => {
         axios.post(helpers.serverDomain + '/users', {
             login,
@@ -69,6 +76,10 @@ export default function Login(){
             .catch(function (error) {
                 alert("Что-то пошло нетак!");
             });
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
     }
 
     useEffect(() => {
@@ -98,31 +109,33 @@ export default function Login(){
 
                 <p className={styles.message}>{messageForUser}</p>
 
-                <input type="text" className={styles.input} onChange={e => setLogin(e.target.value)} placeholder={'Логин'}/>
-                <input type="password" className={styles.input} onChange={e => setPassword(e.target.value)} placeholder={'Пароль'}/>
+                <form onSubmit={handleSubmit} style={{textAlign: 'center'}}>
+                    <input type="text" className={styles.input} onChange={e => setLogin(e.target.value)} placeholder={'Логин'}/>
+                    <input type="password" className={styles.input} onChange={e => setPassword(e.target.value)} placeholder={'Пароль'}/>
+                    <br/>
+                    {
+                        isRegistration ? (
+                            <>
+                                <input type="text" className={styles.input} onChange={e => setFullName(e.target.value)} placeholder={'ФИО'}/>
+                                <input type="text" className={styles.input} onChange={e => setPhone(e.target.value)} placeholder={'Телефон'}/>
+                            </>
+                        ) : null
+                    }
 
-                {
-                    isRegistration ? (
-                        <>
-                            <input type="text" className={styles.input} onChange={e => setFullName(e.target.value)} placeholder={'ФИО'}/>
-                            <input type="text" className={styles.input} onChange={e => setPhone(e.target.value)} placeholder={'Телефон'}/>
-                        </>
-                    ) : null
-                }
-
-                <button
-                    className={styles.button}
-                    onClick={() => {
-                        if(isRegistration){
-                            registrationButtonPressed();
-                        }else{
-                            loginButtonPressed();
-                        }
-                    }}
-                >
-                    {isRegistration ? 'Зарегистрироваться' : 'Войти'}
-                </button>
-
+                    <button
+                        className={styles.button}
+                        onClick={() => {
+                            if(isRegistration){
+                                registrationButtonPressed();
+                            }else{
+                                loginButtonPressed();
+                            }
+                        }}
+                        type={'submit'}
+                    >
+                        {isRegistration ? 'Зарегистрироваться' : 'Войти'}
+                    </button>
+                </form>
                 <p
                     className={styles.registration_link}
                     onClick={() => setIsRegistration(!isRegistration)}

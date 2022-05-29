@@ -30,11 +30,6 @@ export default function Footer(props) {
                 <div className={styles.navList}>
                     <span className={styles.text}>+7 (7172) 45 65 85</span> <br/>
                     <span className={styles.text}>+7 (701) 251 97 82</span>
-                    <div style={{width: '100%', display: 'flex', justifyContent: 'flex-end', marginTop: '10px'}}>
-                        <a href="https://www.instagram.com/">
-                            <Image src={'/inst.png'}/>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>

@@ -29,10 +29,12 @@
 
 .main{
     margin-top: 125px;
+    margin-bottom: -125px;
     width: 100%;
     padding: 10px 5%;
     box-sizing: border-box;
     display: flex;
+    min-height: 85vh;
 }
 .catalog{
     width: 75%;

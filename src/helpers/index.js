@@ -53,8 +53,8 @@ const helpers = {
             </>
         )
     },
-    //serverDomain: 'http://localhost:3030/api',
-    serverDomain: 'https://mattex-backend.herokuapp.com/api',
+    // serverDomain: 'http://localhost:3030/api',
+    serverDomain: 'https://mattex-backend-last.herokuapp.com/',
     localStorageKeys: {
         user: 'user',
         cart: 'cart'

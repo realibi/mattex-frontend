@@ -1,4 +1,4 @@
-import styles from "./style.module.css";
+import styles from "../SalesTable/style.module.css";
 import axios from "axios";
 import helpers from "../../../helpers";
 import {useState} from "react";
@@ -18,13 +18,13 @@ export default function UsersTable(props){
         <>
             <div>
                 <table className={styles.table} cellPadding={10}>
-                    <thead>
+                    <thead className={styles.head_row}>
                     <tr>
-                        <th>ФИО</th>
-                        <th>Телефон</th>
-                        <th>Логин</th>
-                        <th>Пароль</th>
-                        <th>Коэффициент</th>
+                        <th className={styles.table_cell}>ФИО</th>
+                        <th className={styles.table_cell}>Телефон</th>
+                        <th className={styles.table_cell}>Логин</th>
+                        <th className={styles.table_cell}>Пароль</th>
+                        <th className={styles.table_cell}>Коэффициент</th>
                         {props.admin && (<th>Удалить</th>)}
                         {props.admin && (<th>Обновить</th>)}
                     </tr>
@@ -50,8 +50,8 @@ export default function UsersTable(props){
                                 <td className={styles.table_cell}>{item.login}</td>
                                 <td className={styles.table_cell}>{item.password}</td>
                                 <td className={styles.table_cell}><input type="number" onChange={e => setCoefficient(e.target.value)} value={coefficient}/></td>
-                                {props.admin && (<td className={styles.table_cell}><button onClick={() => deleteUsers(item._id)}>Удалить</button></td>)}
-                                {props.admin && (<td className={styles.table_cell}><button onClick={() => updateUser(item._id)}>Обновить</button></td>)}
+                                {props.admin && (<td className={styles.table_cell}><button onClick={() => deleteUsers(item._id)} className={styles.delete_btn}>Удалить</button></td>)}
+                                {props.admin && (<td className={styles.table_cell}><button onClick={() => updateUser(item._id)} className={styles.show_btn}>Обновить</button></td>)}
                             </tr>
                         )
                     })}

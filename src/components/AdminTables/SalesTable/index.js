@@ -6,7 +6,7 @@ export default function SalesTable(props){
     return(
         <div>
             <table className={styles.table} cellPadding={10}>
-                <thead>
+                <thead className={styles.head_row}>
                     <tr>
                         <th>Наименование</th>
                         <th>Ткань</th>

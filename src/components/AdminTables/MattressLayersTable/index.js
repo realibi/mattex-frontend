@@ -43,13 +43,13 @@ export default function MattressLayersTable(props){
         <>
             <div>
                 <table className={styles.table} cellPadding={10}>
-                    <thead>
+                    <thead className={styles.head_row}>
                     <tr>
-                        <th>Наименование</th>
-                        <th>Толщина</th>
-                        <th>Описание</th>
-                        <th>Цена</th>
-                        <th>Ссылка на изображение</th>
+                        <th className={styles.table_cell}>Наименование</th>
+                        <th className={styles.table_cell}>Толщина</th>
+                        <th className={styles.table_cell}>Описание</th>
+                        <th className={styles.table_cell}>Цена</th>
+                        <th className={styles.table_cell}>Ссылка на изображение</th>
                         {props.admin && (<th>Удалить</th>)}
                     </tr>
                     </thead>
@@ -61,7 +61,7 @@ export default function MattressLayersTable(props){
                             <td className={classnames(styles.table_cell, styles.description)}>{item.description}</td>
                             <td className={styles.table_cell}>{item.price}</td>
                             <td className={styles.table_cell}><img width={'100%'} src={item.imgSrc}/></td>
-                            {props.admin && (<td className={styles.table_cell}><button onClick={() => deleteLayer(item._id)}>Удалить</button></td>)}
+                            {props.admin && (<td className={styles.table_cell}><button onClick={() => deleteLayer(item._id)} className={styles.delete_btn}>Удалить</button></td>)}
                         </tr>
                     ))}
                     </tbody>
